@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+chats = [
+  ["ちわ！", 0],
+  ["hello", 1],
+  ["world", 2]
+]
+
+chats.each do |message, ai_type|
+  Chat.create(message: message, ai_type: ai_type)
+end
