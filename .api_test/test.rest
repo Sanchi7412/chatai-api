@@ -1,0 +1,36 @@
+#POST TEST
+POST http://127.0.0.1:3000/chats/register
+Content-Type: application/json
+
+{
+    "message": "テストだよ！",
+    "ai_type": 0
+}
+
+###
+
+#POST FAILD TEST 1
+POST http://127.0.0.1:3000/chats/register
+Content-Type: application/json
+
+{
+    "message": "失敗テストだよ！",
+    "ai_type": ""
+}
+
+###
+
+#POST FAILD TEST 2
+POST http://127.0.0.1:3000/chats/register
+Content-Type: application/json
+
+{
+    "message": "失敗テストだよ！",
+}
+
+###
+
+#GET TEST
+GET http://127.0.0.1:3000/chats/index
+Content-Type: application/json
+

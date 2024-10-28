@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "sichat_test",
+            "database": "${workspaceFolder:chatai-api}/db/development.sqlite3"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

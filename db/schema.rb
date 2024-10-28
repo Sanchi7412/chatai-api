@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_10_24_054952) do
+ActiveRecord::Schema.define(version: 2024_10_28_123705) do
 
   create_table "chats", force: :cascade do |t|
     t.string "message"
-    t.integer "ai_type"
+    t.integer "ai_type", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

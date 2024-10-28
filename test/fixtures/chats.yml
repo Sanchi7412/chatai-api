@@ -2,8 +2,8 @@
 
 one:
   message: MyString
-  ai_type: MyString
+  ai_type: 1
 
 two:
   message: MyString
-  ai_type: MyString
+  ai_type: 1
