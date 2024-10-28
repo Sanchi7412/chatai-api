@@ -9,6 +9,17 @@ Content-Type: application/json
 
 ###
 
+#POST TEST serv
+POST http://100.97.186.26:3000/chats/register
+Content-Type: application/json
+
+{
+    "message": "テストだよ！",
+    "ai_type": 0
+}
+
+###
+
 #POST FAILD TEST 1
 POST http://127.0.0.1:3000/chats/register
 Content-Type: application/json

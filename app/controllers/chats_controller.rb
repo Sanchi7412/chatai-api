@@ -2,7 +2,7 @@ class ChatsController < ApplicationController
   def register
     chat = Chat.new(chat_params)
     if chat.save
-      render json: {message: chat}, status: 201
+      render json: {chats: chat}, status: 201
     else
       render status: 400
     end
@@ -13,7 +13,7 @@ class ChatsController < ApplicationController
     if chats.empty?
       render status: 400
     else
-      render json: {message: chats}, status: 200
+      render json: {chats: chats}, status: 200
     end
   end
 
@@ -23,13 +23,13 @@ class ChatsController < ApplicationController
     if chat.nil?
       chat = Chat.new(chat_params)
       if chat.save
-        render json: {message: chat}, status: 201
+        render json: {chats: chat}, status: 201
       else
         render status: 400
       end
     else
       if chat.update(chat_params)
-        render json: {message: chat}, status: 200
+        render json: {chats: chat}, status: 200
       else
         render status: 400
       end
